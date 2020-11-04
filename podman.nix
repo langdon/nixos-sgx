@@ -2,6 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [ podman conmon runc cni cni-plugins slirp4netns ];
+
+#more stuff that will probably break
   
   environment.etc."containers/registries.conf".text = ''
     [registries.search]
